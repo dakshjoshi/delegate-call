@@ -1,99 +1,28 @@
 {
-  "contractName": "Proxy",
+  "contractName": "IPartner",
   "abi": [
     {
-      "inputs": [],
-      "name": "Address",
-      "outputs": [
-        {
-          "internalType": "address",
-          "name": "",
-          "type": "address"
-        }
-      ],
-      "stateMutability": "view",
-      "type": "function",
-      "constant": true
-    },
-    {
-      "inputs": [],
-      "name": "sender",
-      "outputs": [
-        {
-          "internalType": "address",
-          "name": "",
-          "type": "address"
-        }
-      ],
-      "stateMutability": "view",
-      "type": "function",
-      "constant": true
-    },
-    {
-      "inputs": [],
-      "name": "value",
-      "outputs": [
+      "inputs": [
         {
           "internalType": "uint256",
           "name": "",
           "type": "uint256"
         }
       ],
-      "stateMutability": "view",
-      "type": "function",
-      "constant": true
-    },
-    {
-      "inputs": [
-        {
-          "internalType": "address",
-          "name": "_contract",
-          "type": "address"
-        }
-      ],
-      "name": "setValues",
+      "name": "buyCover",
       "outputs": [],
-      "stateMutability": "payable",
-      "type": "function",
-      "payable": true
-    },
-    {
-      "inputs": [
-        {
-          "internalType": "address",
-          "name": "_contract",
-          "type": "address"
-        }
-      ],
-      "name": "setValues3",
-      "outputs": [],
-      "stateMutability": "payable",
-      "type": "function",
-      "payable": true
-    },
-    {
-      "inputs": [
-        {
-          "internalType": "address",
-          "name": "_partner",
-          "type": "address"
-        }
-      ],
-      "name": "setValues2",
-      "outputs": [],
-      "stateMutability": "payable",
-      "type": "function",
-      "payable": true
+      "stateMutability": "nonpayable",
+      "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.7.6+commit.7338295f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"Address\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"sender\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_contract\",\"type\":\"address\"}],\"name\":\"setValues\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_partner\",\"type\":\"address\"}],\"name\":\"setValues2\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_contract\",\"type\":\"address\"}],\"name\":\"setValues3\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"value\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/C/Users/shelly/Desktop/Blockchain/Ethereum/Delegate Calls/contracts/Proxy.sol\":\"Proxy\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/Users/shelly/Desktop/Blockchain/Ethereum/Delegate Calls/contracts/Proxy.sol\":{\"keccak256\":\"0x72583f400023513034685f6a8ab73e2d6c452f18446bdef9f19dcfe26df294ed\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://aedb91f74e3466e019fc65aff87a926d704dc56bd701a0887aac6c60638d0af1\",\"dweb:/ipfs/QmfVhM8rRGZZeZS1NDwtjZmrYR8GEhjSuZBcYpuvAbmYp3\"]}},\"version\":1}",
-  "bytecode": "0x608060405234801561001057600080fd5b506106f8806100206000396000f3fe6080604052600436106100555760003560e01c806303e016c91461005a578063101e85f31461009e5780633aeaccf5146100e25780633fa4f2451461012357806367e404ce1461014e578063719020781461018f575b600080fd5b61009c6004803603602081101561007057600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506101d3565b005b6100e0600480360360208110156100b457600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506103a6565b005b3480156100ee57600080fd5b506100f761057b565b604051808273ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b34801561012f57600080fd5b506101386105a1565b6040518082815260200191505060405180910390f35b34801561015a57600080fd5b506101636105a7565b604051808273ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b6101d1600480360360208110156101a557600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506105cb565b005b336000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055503460018190555030600260006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055506000808273ffffffffffffffffffffffffffffffffffffffff166005604051602401808281526020019150506040516020818303038152906040527fe11eb782000000000000000000000000000000000000000000000000000000007bffffffffffffffffffffffffffffffffffffffffffffffffffffffff19166020820180517bffffffffffffffffffffffffffffffffffffffffffffffffffffffff83818316178352505050506040518082805190602001908083835b602083106103375780518252602082019150602081019050602083039250610314565b6001836020036101000a038019825116818451168082178552505050505050905001915050600060405180830381855af49150503d8060008114610397576040519150601f19603f3d011682016040523d82523d6000602084013e61039c565b606091505b5091509150505050565b336000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055503460018190555030600260006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055506000808273ffffffffffffffffffffffffffffffffffffffff166005604051602401808281526020019150506040516020818303038152906040527fe11eb782000000000000000000000000000000000000000000000000000000007bffffffffffffffffffffffffffffffffffffffffffffffffffffffff19166020820180517bffffffffffffffffffffffffffffffffffffffffffffffffffffffff83818316178352505050506040518082805190602001908083835b6020831061050a57805182526020820191506020810190506020830392506104e7565b6001836020036101000a0380198251168184511680821785525050505050509050019150506000604051808303816000865af19150503d806000811461056c576040519150601f19603f3d011682016040523d82523d6000602084013e610571565b606091505b5091509150505050565b600260009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b60015481565b60008054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b336000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055503460018190555030600260006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055508073ffffffffffffffffffffffffffffffffffffffff1663e11eb78260056040518263ffffffff1660e01b815260040180828152602001915050600060405180830381600087803b1580156106a757600080fd5b505af11580156106bb573d6000803e3d6000fd5b505050505056fea2646970667358221220d0e12317eb4ce98cf991b34ec60a87fd1db4d4e59e52fe40c8d685289abdcee064736f6c63430007060033",
-  "deployedBytecode": "0x6080604052600436106100555760003560e01c806303e016c91461005a578063101e85f31461009e5780633aeaccf5146100e25780633fa4f2451461012357806367e404ce1461014e578063719020781461018f575b600080fd5b61009c6004803603602081101561007057600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506101d3565b005b6100e0600480360360208110156100b457600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506103a6565b005b3480156100ee57600080fd5b506100f761057b565b604051808273ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b34801561012f57600080fd5b506101386105a1565b6040518082815260200191505060405180910390f35b34801561015a57600080fd5b506101636105a7565b604051808273ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b6101d1600480360360208110156101a557600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506105cb565b005b336000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055503460018190555030600260006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055506000808273ffffffffffffffffffffffffffffffffffffffff166005604051602401808281526020019150506040516020818303038152906040527fe11eb782000000000000000000000000000000000000000000000000000000007bffffffffffffffffffffffffffffffffffffffffffffffffffffffff19166020820180517bffffffffffffffffffffffffffffffffffffffffffffffffffffffff83818316178352505050506040518082805190602001908083835b602083106103375780518252602082019150602081019050602083039250610314565b6001836020036101000a038019825116818451168082178552505050505050905001915050600060405180830381855af49150503d8060008114610397576040519150601f19603f3d011682016040523d82523d6000602084013e61039c565b606091505b5091509150505050565b336000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055503460018190555030600260006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055506000808273ffffffffffffffffffffffffffffffffffffffff166005604051602401808281526020019150506040516020818303038152906040527fe11eb782000000000000000000000000000000000000000000000000000000007bffffffffffffffffffffffffffffffffffffffffffffffffffffffff19166020820180517bffffffffffffffffffffffffffffffffffffffffffffffffffffffff83818316178352505050506040518082805190602001908083835b6020831061050a57805182526020820191506020810190506020830392506104e7565b6001836020036101000a0380198251168184511680821785525050505050509050019150506000604051808303816000865af19150503d806000811461056c576040519150601f19603f3d011682016040523d82523d6000602084013e610571565b606091505b5091509150505050565b600260009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b60015481565b60008054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b336000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055503460018190555030600260006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055508073ffffffffffffffffffffffffffffffffffffffff1663e11eb78260056040518263ffffffff1660e01b815260040180828152602001915050600060405180830381600087803b1580156106a757600080fd5b505af11580156106bb573d6000803e3d6000fd5b505050505056fea2646970667358221220d0e12317eb4ce98cf991b34ec60a87fd1db4d4e59e52fe40c8d685289abdcee064736f6c63430007060033",
+  "metadata": "{\"compiler\":{\"version\":\"0.7.6+commit.7338295f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"buyCover\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/C/Users/shelly/Desktop/Blockchain/Ethereum/Delegate Calls/contracts/Proxy.sol\":\"IPartner\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/Users/shelly/Desktop/Blockchain/Ethereum/Delegate Calls/contracts/Proxy.sol\":{\"keccak256\":\"0x72583f400023513034685f6a8ab73e2d6c452f18446bdef9f19dcfe26df294ed\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://aedb91f74e3466e019fc65aff87a926d704dc56bd701a0887aac6c60638d0af1\",\"dweb:/ipfs/QmfVhM8rRGZZeZS1NDwtjZmrYR8GEhjSuZBcYpuvAbmYp3\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
   "immutableReferences": {},
   "generatedSources": [],
   "deployedGeneratedSources": [],
-  "sourceMap": "199:1086:2:-:0;;;;;;;;;;;;;;;;;;;",
-  "deployedSourceMap": "199:1086:2:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;670:300;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;371:291;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;340:22;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;311:20;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;283:21;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;1084:198;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;670:300;744:10;735:6;;:19;;;;;;;;;;;;;;;;;;773:9;765:5;:17;;;;813:4;795:7;;:23;;;;;;;;;;;;;;;;;;832:12;846:17;867:9;:22;;949:1;904:47;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;867:95;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;831:131;;;;670:300;;;:::o;371:291::-;444:10;435:6;;:19;;;;;;;;;;;;;;;;;;473:9;465:5;:17;;;;513:4;495:7;;:23;;;;;;;;;;;;;;;;;;532:12;546:17;567:9;:14;;641:1;596:47;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;567:87;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;531:123;;;;371:291;;;:::o;340:22::-;;;;;;;;;;;;;:::o;311:20::-;;;;:::o;283:21::-;;;;;;;;;;;;:::o;1084:198::-;1157:10;1148:6;;:19;;;;;;;;;;;;;;;;;;1186:9;1178:5;:17;;;;1226:4;1208:7;;:23;;;;;;;;;;;;;;;;;;1253:8;1244:27;;;1272:1;1244:30;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1084:198;:::o",
+  "sourceMap": "",
+  "deployedSourceMap": "",
   "source": "// SPDX-License-Identifier: MIT\r\npragma solidity >=0.4.22 <0.9.0;\r\n\r\ninterface IPartner {\r\n    function buyCover(uint256) external;\r\n}\r\n\r\n// Proxy Contract which will interact with Partner contract\r\ncontract Proxy {\r\n    // NOTE: storage layout must be the same as contract A\r\n\r\n    address public sender;\r\n    uint256 public value;\r\n\r\n    address public Address;\r\n\r\n    function setValues(address _contract) public payable {\r\n        sender = msg.sender;\r\n        value = msg.value;\r\n\r\n        Address = address(this);\r\n\r\n        (bool success, bytes memory data) = _contract.call(\r\n            abi.encodeWithSignature(\"buyCover(uint256)\", 5)\r\n        );\r\n    }\r\n\r\n    function setValues3(address _contract) public payable {\r\n        sender = msg.sender;\r\n        value = msg.value;\r\n\r\n        Address = address(this);\r\n\r\n        (bool success, bytes memory data) = _contract.delegatecall(\r\n            abi.encodeWithSignature(\"buyCover(uint256)\", 5)\r\n        );\r\n    }\r\n\r\n    //This will not work as desired, this will set the buyer in partner.sol as the main contract address\r\n    function setValues2(address _partner) public payable {\r\n        sender = msg.sender;\r\n        value = msg.value;\r\n\r\n        Address = address(this);\r\n\r\n        IPartner(_partner).buyCover(5);\r\n    }\r\n}\r\n",
   "sourcePath": "C:/Users/shelly/Desktop/Blockchain/Ethereum/Delegate Calls/contracts/Proxy.sol",
   "ast": {
@@ -3237,17 +3166,9 @@
     "name": "solc",
     "version": "0.7.6+commit.7338295f.Emscripten.clang"
   },
-  "networks": {
-    "5777": {
-      "events": {},
-      "links": {},
-      "address": "0x43DEfF157bdeD05118885A37c23120F2FFe4b724",
-      "transactionHash": "0x60c256185a4d0e5ee98b838801d86fc2dfc728719237e393e6ef40b5da7fcdcb"
-    }
-  },
+  "networks": {},
   "schemaVersion": "3.4.1",
-  "updatedAt": "2021-08-09T14:44:18.075Z",
-  "networkType": "ethereum",
+  "updatedAt": "2021-08-09T14:44:13.192Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},
